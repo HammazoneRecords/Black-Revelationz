@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  html { font-size: 17px; }
+  body {
+    background: #000;
+    color: #fff;
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+  }
+  * { box-sizing: border-box; }
+  #root { min-height: 100vh; }
+}
+
+/* Snap scroll for Reels */
+.snap-feed {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100dvh;
+}
+.snap-item { scroll-snap-align: start; }
+
+/* Gold gradient ring for story circles */
+.story-ring {
+  background: linear-gradient(135deg, #c9a84c, #f0d080, #c9a84c);
+  padding: 2px;
+  border-radius: 50%;
+}
+.story-ring-inner {
+  background: #000;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up   { animation: fadeUp 0.45s ease forwards; }
+.fade-up-1 { animation: fadeUp 0.45s 0.05s ease forwards; opacity: 0; }
+.fade-up-2 { animation: fadeUp 0.45s 0.12s ease forwards; opacity: 0; }
+.fade-up-3 { animation: fadeUp 0.45s 0.20s ease forwards; opacity: 0; }
