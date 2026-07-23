@@ -4,7 +4,7 @@
 **Live domain:** N/A (not yet deployed)
 **VPS container:** N/A
 **VPS port:** N/A (next available: 7012)
-**Repo:** N/A (not yet git-initialized)
+**Repo:** `https://github.com/HammazoneRecords/Black-Revelationz`
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Branch | Last Updated | Deployed? | Notes |
 |---|---|---|---|
-| main | 2026-05-12 | ⬜ Local only | Dev server localhost:5175 |
+| master | 2026-06-10 | ⬜ Local only, repo on GitHub | Dev server localhost:5175 |
 
 ## Last Action
 
@@ -48,3 +48,4 @@
 | Date | Branch | Action | Notes |
 |---|---|---|---|
 | 2026-05-12 | main | Initial BRANCH_STATUS.md created | Site built locally, not yet on VPS |
+| 2026-06-10 | master | Fixed broken local git state (`.git_disabled` had no objects/refs) | Repo was already pushed to GitHub at HammazoneRecords/Black-Revelationz (commit `8e292cf`) — re-init'd local `.git`, set remote, reset to match origin. Still not deployed to VPS. |
